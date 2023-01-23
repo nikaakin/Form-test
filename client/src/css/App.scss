@@ -1,0 +1,14 @@
+@import "./variables";
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 4fr;
+  min-height: calc(100vh - 6rem);
+}
+
+.list {
+  border-right: 3px $color-gray-2 solid;
+}
+
+.detail {
+}

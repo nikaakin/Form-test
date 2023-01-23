@@ -1,0 +1,37 @@
+@import "./variables";
+
+.user-detail {
+  text-align: center;
+  padding: 1rem 1rem;
+
+  background-image: linear-gradient(
+    to bottom right,
+    $color-white-1,
+    $color-white
+  );
+
+  &__image {
+    &--image {
+      height: 15rem;
+      width: auto;
+    }
+  }
+
+  &__link {
+    margin-top: 4rem;
+    text-align: right;
+    a:link,
+    a:visited {
+      background-color: $color-primary;
+      transition: all 0.3s;
+      border-radius: 5px;
+      color: $color-white;
+      padding: 0.7rem 1.2rem;
+      font-weight: 600;
+      &:hover {
+        background-color: $color-primary-dark;
+        box-shadow: 0px 1rem 4rem rgba($color-primary-dark, 0.45);
+      }
+    }
+  }
+}

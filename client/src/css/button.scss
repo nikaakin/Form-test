@@ -1,0 +1,49 @@
+@import "./variables";
+
+.btn {
+  color: #efefef;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+  &-green {
+    background-color: $color-secondary;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: rgba($color-secondary-light, 0.6);
+      box-shadow: 0px 1rem 4rem rgba($color-secondary-light, 0.25);
+    }
+  }
+
+  &-blue {
+    background-color: $color-primary;
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgba($color-primary-dark, 1);
+      box-shadow: 0px 1rem 4rem rgba($color-primary-light, 0.25);
+    }
+  }
+
+  &-gray {
+    color: $color-white;
+    background-color: $color-gray-4;
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgba($color-primary-dark, 1);
+      box-shadow: 0px 1rem 2rem rgba($color-primary-light, 0.45);
+    }
+  }
+
+  &:hover {
+    color: $color-white;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    &:hover {
+      background-color: gray;
+      box-shadow: none;
+    }
+  }
+}

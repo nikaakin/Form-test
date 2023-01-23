@@ -1,0 +1,52 @@
+@import "./variables";
+
+.picture-input-wrapper {
+  position: relative;
+}
+
+input[type^="file"] {
+  background-color: $color-white;
+}
+
+input[type^="date"] {
+  background-color: $color-white;
+  color: rgba($color-black, 0.7);
+}
+
+.picker {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba($color-black, 0.7);
+  border: none;
+  border-radius: 3px;
+  background-color: $color-white;
+  padding: 0.4rem 0.6rem;
+}
+
+.picture-picker-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+#picture {
+  height: fit-content;
+  align-self: center;
+}
+
+.progress-button-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 1rem 6rem;
+}
+
+.btn-right {
+  grid-column-start: 2;
+  grid-column-start: 2;
+  justify-self: right;
+}
+.btn-left {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  justify-self: left;
+}

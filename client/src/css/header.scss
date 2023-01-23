@@ -1,0 +1,29 @@
+@import "./variables";
+
+.header {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-color: $color-primary-dark;
+
+  &__left-side {
+    a:link,
+    a:visited {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-end;
+      justify-content: flex-start;
+      h2 {
+        color: $color-white;
+      }
+    }
+  }
+
+  &__right-side {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,16 @@
+@import "./variables";
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: $color-secondary;
+  font-weight: 700;
+  text-align: end;
+
+  transition: all 0.3s;
+  border-radius: 5px;
+  &:hover {
+    color: $color-white;
+    background-color: $color-secondary;
+    padding: 0.4rem 0.6rem;
+  }
+}

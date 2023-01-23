@@ -1,0 +1,30 @@
+@import "./variables";
+
+.alert {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-primary, 0.45);
+
+  & > * {
+    margin: 0 auto;
+    margin-top: 10rem;
+    width: 60vw;
+    text-align: center;
+    color: $color-white;
+    font-size: 24px;
+    padding: 3rem 5rem;
+  }
+
+  &__success {
+    background-color: $color-secondary;
+  }
+
+  &__error {
+    background-color: $color-tertiary;
+  }
+}

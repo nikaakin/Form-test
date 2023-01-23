@@ -1,0 +1,50 @@
+@import "./variables";
+
+.user-list {
+  padding: 1rem 0.5rem;
+
+  &__item {
+    border-radius: 3px;
+    display: flex;
+    gap: 1rem;
+    transition: all 0.3s;
+    padding: 1rem 2rem;
+    border-block: 1px $color-gray-2 solid;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    &--image {
+      height: 3rem;
+      width: auto;
+    }
+
+    &--info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      flex-grow: 1;
+    }
+
+    &--header {
+      margin: 0;
+      font-size: 1.2rem;
+      color: $color-primary-dark;
+      cursor: default;
+      text-align: start;
+    }
+
+    &--link {
+      text-align: right;
+    }
+
+    &:hover {
+      background-image: linear-gradient(
+        to bottom right,
+        $color-white-1,
+        $color-white-2
+      );
+    }
+  }
+}

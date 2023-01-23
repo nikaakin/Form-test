@@ -1,0 +1,85 @@
+@import "./variables";
+
+.progressBar {
+  display: grid;
+  margin: 2rem;
+}
+
+.stage-line {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    border: 1px solid $color-secondary;
+    width: 75%;
+    bottom: 0;
+    left: 0;
+    border-radius: 500px;
+  }
+}
+
+.first-line {
+  &:after {
+    width: 85%;
+  }
+}
+
+.stage-point {
+  position: relative;
+  z-index: 10;
+
+  &--number {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1000px;
+    border: 1px solid $color-secondary;
+    color: $color-primary-dark;
+    font-weight: 600;
+  }
+
+  &--text {
+    color: $color-primary-dark;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 100%);
+  }
+}
+
+.first-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-130%, -70%);
+}
+
+.second-wrapper {
+  display: flex;
+}
+
+.fill-bar {
+  &:after {
+    animation: fill-bar-anim 3s forwards;
+  }
+}
+
+.fill-circle {
+  animation: fill-bar-anim 1s 1s forwards;
+}
+
+@keyframes fill-bar-anim {
+  0% {
+    background-color: $color-white;
+    color: $color-primary-dark;
+  }
+
+  100% {
+    color: $color-white;
+    background-color: $color-secondary;
+  }
+}
